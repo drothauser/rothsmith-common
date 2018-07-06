@@ -19,8 +19,8 @@
 	</organization>
 
 	<properties>
-		<nexus.host>54.81.205.65:8081</nexus.host>
-		<jenkins.host>52.91.34.208:8080</jenkins.host>
+		<nexus.host>54.235.225.58:8081</nexus.host>
+		<jenkins.host>34.238.254.203:8080</jenkins.host>
 		<coverage.reports.dir>target/coverage-reports</coverage.reports.dir>
 		<coverage.merged.reportPath>target/coverage-reports/jacoco.exec</coverage.merged.reportPath>
 		<includeDependencySources>true</includeDependencySources>
@@ -45,7 +45,7 @@
 		<jacoco.version>0.7.8</jacoco.version>
 		<pmd.plugin.version>3.7</pmd.plugin.version>
 		<pmd.rulesfile>pmdrules.xml</pmd.rulesfile>
-		<checkstyle.plugin.version>2.17</checkstyle.plugin.version>
+		<checkstyle.plugin.version>3.0.0</checkstyle.plugin.version>
 		<checkstyle.config>checkstyle_checks.xml</checkstyle.config>
 		<findbugs.plugin.version>3.0.4</findbugs.plugin.version>
 		<org.springframework.version>5.0.7.RELEASE</org.springframework.version>
