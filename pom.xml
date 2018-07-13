@@ -19,8 +19,8 @@
 	</organization>
 
 	<properties>
-		<nexus.host>54.235.225.58:8081</nexus.host>
-		<jenkins.host>34.238.254.203:8080</jenkins.host>
+		<nexus.host>nexus:8081</nexus.host>
+		<jenkins.host>rothsmith.net:8080</jenkins.host>
 		<coverage.reports.dir>target/coverage-reports</coverage.reports.dir>
 		<coverage.merged.reportPath>target/coverage-reports/jacoco.exec</coverage.merged.reportPath>
 		<includeDependencySources>true</includeDependencySources>
