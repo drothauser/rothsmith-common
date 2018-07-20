@@ -42,7 +42,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<sonar.jacoco.reportPath>target/coverage-reports/jacoco-unit.exec</sonar.jacoco.reportPath>
 		<surefire.version>2.18.1</surefire.version>
-		<jacoco.version>0.7.8</jacoco.version>
+		<jacoco.version>0.8.1</jacoco.version>
 		<pmd.plugin.version>3.7</pmd.plugin.version>
 		<pmd.rulesfile>pmdrules.xml</pmd.rulesfile>
 		<checkstyle.plugin.version>3.0.0</checkstyle.plugin.version>
@@ -571,7 +571,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.7.7.201606060606</version>
+				<version>${jacoco.version}</version>
 				<executions>
 					<execution>
 						<id>coverage-java-agent-option</id>
@@ -873,7 +873,7 @@
 								<plugin>
 									<groupId>org.jacoco</groupId>
 									<artifactId>jacoco-maven-plugin</artifactId>
-									<version>0.7.7.201606060606</version>
+									<version>${jacoco.version}</version>
 									<configuration>
 										<dataFile>target/coverage-reports/jacoco.exec</dataFile>
 									</configuration>
@@ -998,7 +998,7 @@
 								<plugin>
 									<groupId>org.jacoco</groupId>
 									<artifactId>jacoco-maven-plugin</artifactId>
-									<version>0.7.7.201606060606</version>
+									<version>${jacoco.version}</version>
 									<configuration>
 										<dataFile>target/coverage-reports/jacoco.exec</dataFile>
 									</configuration>
@@ -1125,7 +1125,7 @@
 								<plugin>
 									<groupId>org.jacoco</groupId>
 									<artifactId>jacoco-maven-plugin</artifactId>
-									<version>0.7.7.201606060606</version>
+									<version>${jacoco.version}</version>
 									<configuration>
 										<dataFile>target/coverage-reports/jacoco.exec</dataFile>
 									</configuration>
@@ -1263,7 +1263,7 @@
 						<plugin>
 							<groupId>org.jacoco</groupId>
 							<artifactId>jacoco-maven-plugin</artifactId>
-							<version>0.7.7.201606060606</version>
+							<version>${jacoco.version}</version>
 							<configuration>
 								<dataFile>target/coverage-reports/jacoco.exec</dataFile>
 							</configuration>
