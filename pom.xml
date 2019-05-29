@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.rothsmith</groupId>
 	<artifactId>rothsmith-common</artifactId>
-	<version>1.0.0.${revision}</version>
+	<version>1.0.0-${revision}</version>
 	<packaging>pom</packaging>
 	<name>Rothsmith, LLC Parent POM</name>
 	<description>Parent project that provides standard versions of
@@ -20,6 +20,7 @@
 	</organization>
 
 	<properties>
+		<revision>SNAPSHOT</revision>
 		<nexus.host>nexus.rothsmith.net</nexus.host>
 		<jenkins.host>rothsmith.net:8080</jenkins.host><coverage.reports.dir>target/coverage-reports</coverage.reports.dir>
 		<coverage.merged.reportPath>target/coverage-reports/jacoco.exec</coverage.merged.reportPath>
