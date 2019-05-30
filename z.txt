@@ -1,0 +1,68 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.rothsmith:rothsmith-common:pom:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ net.rothsmith:rothsmith-common:${VERSION_NUMBER}, /data/ldrothauser/git/rothsmith-common/pom.xml, line 9, column 11
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ net.rothsmith:rothsmith-common:${VERSION_NUMBER}, /data/ldrothauser/git/rothsmith-common/pom.xml, line 1233, column 20
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< net.rothsmith:rothsmith-common >-------------------
+[INFO] Building Rothsmith, LLC Parent POM 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (coverage-java-agent-option) @ rothsmith-common ---
+[INFO] argLine set to -javaagent:/data/ldrothauser/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/data/ldrothauser/git/rothsmith-common/target/coverage-reports/jacoco-unit.exec,includes=com/rothsmith/**,excludes=com/rothsmith/job/test/**/*:com/rothsmith/**/*Test:com/rothsmith/**/*IT:com/rothsmith/**/*TestSuite
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (unit-tests) @ rothsmith-common ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (replace-pom-placeholder) @ rothsmith-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] >>> maven-source-plugin:3.0.1:jar (default) > generate-sources @ rothsmith-common >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (coverage-java-agent-option) @ rothsmith-common ---
+[INFO] argLine set to -javaagent:/data/ldrothauser/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/data/ldrothauser/git/rothsmith-common/target/coverage-reports/jacoco-unit.exec,includes=com/rothsmith/**,excludes=com/rothsmith/job/test/**/*:com/rothsmith/**/*Test:com/rothsmith/**/*IT:com/rothsmith/**/*TestSuite
+[INFO] 
+[INFO] <<< maven-source-plugin:3.0.1:jar (default) < generate-sources @ rothsmith-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar (default) @ rothsmith-common ---
+[INFO] 
+[INFO] >>> maven-source-plugin:3.0.1:test-jar (default) > generate-sources @ rothsmith-common >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (coverage-java-agent-option) @ rothsmith-common ---
+[INFO] argLine set to -javaagent:/data/ldrothauser/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/data/ldrothauser/git/rothsmith-common/target/coverage-reports/jacoco-unit.exec,includes=com/rothsmith/**,excludes=com/rothsmith/job/test/**/*:com/rothsmith/**/*Test:com/rothsmith/**/*IT:com/rothsmith/**/*TestSuite
+[INFO] 
+[INFO] <<< maven-source-plugin:3.0.1:test-jar (default) < generate-sources @ rothsmith-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:test-jar (default) @ rothsmith-common ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.6:attach-descriptor (attach-descriptor) @ rothsmith-common ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- maven-install-plugin:3.0.0-M1:install-file (overwrite-pom-install) @ rothsmith-common ---
+[INFO] Installing /data/ldrothauser/git/rothsmith-common/target/pom-install-deploy-fix/pom.xml to /data/ldrothauser/.m2/repository/net/rothsmith/rothsmith-common/1.0.0-SNAPSHOT/rothsmith-common-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:3.0.0-M1:deploy-file (overwrite-pom-deploy) @ rothsmith-common ---
+Downloading from remote-repository: http://nexus.rothsmith.net/repository/rothsmith-snapshots/net/rothsmith/rothsmith-common/1.0.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 606 B                   Downloaded from remote-repository: http://nexus.rothsmith.net/repository/rothsmith-snapshots/net/rothsmith/rothsmith-common/1.0.0-SNAPSHOT/maven-metadata.xml (606 B at 3.5 kB/s)
+Uploading to remote-repository: http://nexus.rothsmith.net/repository/rothsmith-snapshots/net/rothsmith/rothsmith-common/1.0.0-SNAPSHOT/rothsmith-common-1.0.0-20190530.200342-2.pom
+Progress (1): 2.0/68 kBProgress (1): 4.1/68 kBProgress (1): 6.1/68 kBProgress (1): 8.2/68 kBProgress (1): 10/68 kB Progress (1): 12/68 kBProgress (1): 14/68 kBProgress (1): 16/68 kBProgress (1): 18/68 kBProgress (1): 20/68 kBProgress (1): 23/68 kBProgress (1): 25/68 kBProgress (1): 27/68 kBProgress (1): 29/68 kBProgress (1): 31/68 kBProgress (1): 33/68 kBProgress (1): 35/68 kBProgress (1): 37/68 kBProgress (1): 39/68 kBProgress (1): 41/68 kBProgress (1): 43/68 kBProgress (1): 45/68 kBProgress (1): 47/68 kBProgress (1): 49/68 kBProgress (1): 51/68 kBProgress (1): 53/68 kBProgress (1): 55/68 kBProgress (1): 57/68 kBProgress (1): 59/68 kBProgress (1): 61/68 kBProgress (1): 63/68 kBProgress (1): 66/68 kBProgress (1): 68/68 kBProgress (1): 68 kB                      [INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.851 s
+[INFO] Finished at: 2019-05-30T16:03:42-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:3.0.0-M1:deploy-file (overwrite-pom-deploy) on project rothsmith-common: Failed to deploy artifacts: Could not transfer artifact net.rothsmith:rothsmith-common:pom:1.0.0-20190530.200342-2 from/to remote-repository (http://nexus.rothsmith.net/repository/rothsmith-snapshots): Failed to transfer file http://nexus.rothsmith.net/repository/rothsmith-snapshots/net/rothsmith/rothsmith-common/1.0.0-SNAPSHOT/rothsmith-common-1.0.0-20190530.200342-2.pom with status code 401 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

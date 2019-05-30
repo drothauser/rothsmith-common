@@ -27,6 +27,7 @@
 		<snapshotRepoUrl>http://${nexus.host}/repository/rothsmith-snapshots</snapshotRepoUrl>		
 		<snapshotRepoId>snapshots</snapshotRepoId>
 		<deployRepoUrl>${releaseRepoUrl}</deployRepoUrl>
+		<deployRepoId>${releaseRepoId}</deployRepoId>
 		<isRelease>true</isRelease>
 		<jenkins.host>rothsmith.net:8080</jenkins.host>
 		<coverage.reports.dir>target/coverage-reports</coverage.reports.dir>
