@@ -24,7 +24,7 @@
 		<nexus.host>nexus.rothsmith.net</nexus.host>
 		<releaseRepoUrl>http://${nexus.host}/repository/rothsmith-releases</releaseRepoUrl>
 		<releaseRepoId>releases</releaseRepoId>
-		<snapshotRepoUrl>http://${nexus.host}/repository/rothsmith-snapshots</snapshotRepoUrl>		
+		<snapshotRepoUrl>http://${nexus.host}/repository/rothsmith-snapshots</snapshotRepoUrl>
 		<snapshotRepoId>snapshots</snapshotRepoId>
 		<deployRepoUrl>${releaseRepoUrl}</deployRepoUrl>
 		<isRelease>true</isRelease>
@@ -57,7 +57,6 @@
 		<checkstyle.config>checkstyle_checks.xml</checkstyle.config>
 		<findbugs.plugin.version>3.0.4</findbugs.plugin.version>
 		<org.springframework.version>5.0.7.RELEASE</org.springframework.version>
-		<basedir1>${basedir}</basedir1>
 	</properties>
 
 	<developers>
@@ -148,10 +147,8 @@
 				<scope>compile</scope>
 			</dependency>
 			<dependency>
-				<groupId>com.oracle</groupId>
-				<artifactId>ojdbc6</artifactId>
-				<version>11.2.0.4.0</version>
-				<scope>runtime</scope>
+				<groupId>com.oracle.database.jdbc</groupId>
+				<artifactId>ojdbc8</artifactId>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
@@ -259,13 +256,29 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<sourceDirectory>src\main\java</sourceDirectory>
+		<scriptSourceDirectory>src\main\scripts</scriptSourceDirectory>
+		<testSourceDirectory>src\test\java</testSourceDirectory>
+		<outputDirectory>target\classes</outputDirectory>
+		<testOutputDirectory>target\test-classes</testOutputDirectory>
 		<extensions>
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-webdav-jackrabbit</artifactId>
-				<version>3.3.2</version>
+				<version>2.7</version>
 			</extension>
 		</extensions>
+		<resources>
+			<resource>
+				<directory>src\main\resources</directory>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src\test\resources</directory>
+			</testResource>
+		</testResources>
+		<directory>target</directory>
 		<finalName>${project.artifactId}</finalName>
 		<pluginManagement>
 			<plugins>
@@ -470,9 +483,9 @@
 					<version>8.1.16.v20140903</version>
 					<dependencies>
 						<dependency>
-							<groupId>com.oracle</groupId>
-							<artifactId>ojdbc6</artifactId>
-							<version>11.2.0.4.0</version>
+							<groupId>com.oracle.database.jdbc</groupId>
+							<artifactId>ojdbc8</artifactId>
+							<version>21.3.0.0</version>
 							<scope>runtime</scope>
 						</dependency>
 						<dependency>
@@ -527,7 +540,7 @@
 		</pluginManagement>
 		<plugins>
 			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>				
+				<artifactId>maven-resources-plugin</artifactId>
 				<executions>
 					<execution>
 						<id>replace-pom-placeholder</id>
@@ -595,9 +608,7 @@
 							<version>${project.version}</version>
 							<updateReleaseInfo>${isRelease}</updateReleaseInfo>
 							<repositoryId>snapshots</repositoryId>
-							<!--  
-							<uniqueVersion>false</uniqueVersion>
-							 -->
+							<!-- <uniqueVersion>false</uniqueVersion> -->
 						</configuration>
 					</execution>
 				</executions>
